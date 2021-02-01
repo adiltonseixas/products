@@ -20,7 +20,7 @@ Também foi desenvolvida uma carga de Seed para cadastrar um dado inicial após 
 5. O arquivo do banco de dados database.sqlite já se encontra disponível no projeto no caminho **api/database/database.sqlite**. 
 Caso deseje criar uma nova base de dados basta apenas excluir o arquivo chamado database.sqllite no caminho **api/database/** e criar um novo arquivo com o mesmo nome. 
 Executar o comando **sh scripts/resetDatabase.sh** este é um comando customizado para resetar o banco de dados cada vez que houver necessidade. 
-Se desejar outra forma de criação é gerar um arquivo vazio no caminho no caminho **api/database/database.sqlite** e executar os comandos **php artisan migrate** parar criação de 
+Se desejar, outra forma de criação é gerar um arquivo vazio no caminho no caminho **api/database/database.sqlite** e executar os comandos **php artisan migrate** parar criação de 
 tabelas e executar seeds com o comando **php artisan db:seed**
 6. Criar um arquivo de configuração **.env** baseado no arquivo exemplo **.env.example** disponível no projeto e no parâmetro **DB_DATABASE** informar o endereço absoluto do arquivo database.sqlite. 
 **Exemplo: DB_DATABASE=C:\Users\adilt\Documents\projetos\products\api\database\database.sqlite**
