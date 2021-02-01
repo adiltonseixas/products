@@ -5,7 +5,7 @@
 - **API:** Desenvolvida utilizando o framework Laravel, seguindo o modelo MVC. Gerados serviços de CRUD simples para produtos e categoria de produtos conforme solicitado pelo 
 desafio.
 - **Banco de Dados:** Utilizado Banco de Dados em SQL Lite recomendado para aplicações com menos robustez como a solicitada durante o desafio.
-Foram criadas apenas duas tabelas para apresentar as informações solicitadas no desafio. Uma  tabela de produtos e uma tabela de categoria que terá associação com o cliente 
+Foram criadas apenas duas tabelas para apresentar as informações solicitadas no desafio. Uma  tabela de produtos e uma tabela de categoria que terá associação com o produto 
 através de Foreign Key.
 Para construção das tabelas foi utilizado o conceito de Migrations do Laravel e as Migrations utilizadas se encontra disponíveis no caminho padrão disponibilizado pelo laravel. 
 Também foi desenvolvida uma carga de Seed para cadastrar um dado inicial após a criação do banco de dados. 
