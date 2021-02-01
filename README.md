@@ -26,3 +26,30 @@ tabelas e executar seeds com o comando **php artisan db:seed**
 **Exemplo: DB_DATABASE=C:\Users\adilt\Documents\projetos\products\api\database\database.sqlite**
 7. Executar o comando **php artisan serve** para iniciar execução da api.
 
+## Estrutura do Projeto
+
+```
+api
+└───app                     # App
+    └───Console             # Contem arquivos de commands
+    └───Exceptions          # Exceptions
+    └───Http                # Contem controllers e middlewares
+        └───Controllers     # Responsável por fazer o controle de requisições
+        └───Middleware      # Responsável por fazer o controle intermediario entre o client e o controller
+        └───Traits          # Camada que contém classes genéricas para reutilização de código 
+    └───Providers           # Providers
+    └───Respository         # Camada responsável por acesso com o banco de dados
+    └───Services            # Camada responsável pela regra de negócio
+    └───Models.php          # Contém arquivos de Model da aplicação
+└───bootstrap               # Contem arquivo de configuração de utilização de funcionalidades do projeto (middleware, eloquent e etc.)
+└───config                  # Config
+└───database                # Contem as migrations, seeders e factories
+└───public                  # Public
+└───resources               # Resource
+└───routes                  # Contem o arquivos que armazena os end-points
+└───scripts                 # Scrips para determinada ação (Contem o RUN da API)
+└───storage                 # Storage
+└───tests                   # Contem os tests da API
+└───vendor                  # Vendor
+└───.env.example            # Exemplo do arquivos de configuração de acesso ao banco de dados do projeto
+```
